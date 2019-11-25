@@ -1,0 +1,3176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="jingdong2.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- 一级导航栏 -->
+    <div class="nav">
+        <div class="center">
+            <div class="main">
+                <div class="fl">
+                    <a href="#"><i class="fa fa-map-marker"></i>广东</a>
+                    <div class="fl-item">
+                        <div class="fl-itemt">
+                            <ul>
+                                <li>北京</li>
+                                <li>山西</li>
+                                <li>内蒙古</li>
+                                <li>福建</li>
+                                <li>江西</li>
+                                <li>西藏</li>
+                                <li>新疆</li>
+                            </ul>
+                            <ul>
+                                <li>上海</li>
+                                <li>河南</li>
+                                <li>江苏</li>
+                                <li>河北</li>
+                                <li>四川</li>
+                                <li>陕西</li>
+                                <li>港澳</li>
+                            </ul>
+                            <ul>
+                                <li>天津</li>
+                                <li>辽宁</li>
+                                <li>山东</li>
+                                <li>湖南</li>
+                                <li>河南</li>
+                                <li>甘肃</li>
+                                <li>台湾</li>
+                            </ul>
+                            <ul>
+                                <li>重庆</li>
+                                <li>吉林</li>
+                                <li>安徽</li>
+                                <li id="active3">广东</li>
+                                <li>贵州</li>
+                                <li>青海</li>
+                                <li>钓鱼岛</li>
+                            </ul>
+                            <ul>
+                                <li>河北</li>
+                                <li>黑龙江</li>
+                                <li>浙江</li>
+                                <li>广西</li>
+                                <li>云南</li>
+                                <li>宁夏</li>
+                                <li>海外</li>
+                            </ul>
+                        </div>
+                        <div class="fl-itemm">
+                            <span>地区专享版本</span>
+                            <p>中国港澳</p>
+                        </div>
+                        <div class="fl-itemb">
+                            <span>Available Sites</span>
+                            <div><span>Gobal Site</span><span>Gobal Site</span></div>
+                            <div><span>Gobal Site</span><span>Gobal Site</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr">
+                    <span>用户,&nbsp;&nbsp;请登录</span>
+                    <ul>
+                        <li><a href="#">免费注册</a></li>
+                        <div>|</div>
+                        <li><a href="#">我的订单</a></li>
+                        <div>|</div>
+                        <li id="me">
+                            <a href="#">我的京东<i class="fa fa-angle-down fa-lg"></i></a>
+                            <div class="fr-item">
+                                <div class="fr-itemt">
+                                    <div>
+                                        <ul>
+                                            <li>待处理订单</li>
+                                            <li>返修退换货</li>
+                                            <li>降价商品</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>消息</li>
+                                            <li>我的问答</li>
+                                            <li>我的关注</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="fr-itemb">
+                                    <div>
+                                        <ul>
+                                            <li>我的京豆</li>
+                                            <li>我的白条</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>我的优惠券</li>
+                                            <li>我的理财</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div>|</div>
+                        <li><a href="#">京东会员</a></li>
+                        <div>|</div>
+                        <li id="purchase">
+                            <a href="#" id="active">企业采购<i class="fa fa-angle-down fa-lg"></i></a>
+                            <div class="purchaseitem">
+                                <div class="purchasebox">
+                                    <div>
+                                        <ul>
+                                            <li>企业购</li>
+                                            <li>工业品</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>商用场景馆</li>
+                                            <li>礼品卡</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div>|</div>
+                        <li><a href="#">客户服务<i class="fa fa-angle-down fa-lg"></i></a></li>
+                        <div>|</div>
+                        <li><a href="#">网站导航<i class="fa fa-angle-down fa-lg"></i></a></li>
+                        <div>|</div>
+                        <li><a href="#">手机京东</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="center">
+            <div class="main">
+                <div class="logo"></div>
+                <div class="search">
+                    <div class="sl">
+                        <div class="insertext" id="insertext">
+                            手机
+                        </div>
+                        <input type="text" onfocus="inputFocus()" onblur="inputBlur()" autocomplete="off" id="input">
+                        <div class="inputdown" id="inputdown">
+                        </div>
+                        <i class="fa fa-camera fa-lg"></i>
+                    </div>
+                    <button id="button" onclick="clickbtn()"><i class="fa fa-search fa-lg"></i></button>
+                    <div class="shopcart">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        <span>我的购物车</span>
+                        <var>0</var>
+                    </div>
+                </div>
+                <div class="navigationbar1">
+                    <ul>
+                        <li id="navigationbarli">
+                            <a href="#" id="active">夏季很闷热</a>
+                            <a href="#" id="active">冬季好寒冷</a>
+                            <a href="#" id="active">秋季超凉爽</a>
+                        </li>
+                        <li><a href="#">茗茶专场</a></li>
+                        <li><a href="#">食用油</a></li>
+                        <li><a href="#">空调巅峰</a></li>
+                        <li><a href="#">每100-50</a></li>
+                        <li><a href="#">洗发沐浴</a></li>
+                        <li><a href="#">血压监测</a></li>
+                        <li><a href="#">整套茶具</a></li>
+                        <li><a href="#">时尚轻奢</a></li>
+                    </ul>
+                </div>
+                <div class="navigationbar2">
+                    <ul>
+                        <li id="active2">秒杀</li>
+                        <li id="active2">优惠劵</li>
+                        <li>PLUS会员</li>
+                        <li>闪购</li>
+                        <li>拍卖</li>
+                        <li>京东时尚</li>
+                        <li>京东超市</li>
+                        <li>京东生鲜</li>
+                        <li>海囤全球</li>
+                        <li>京东金融</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播部分 -->
+    <div class="oneWrap">
+        <div class="center">
+            <div class="main">
+                <div class="menu" id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">家用电器</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">手机</a>
+                            <span>/</span>
+                            <a href="#">运营商</a>
+                            <span>/</span>
+                            <a href="#">数码</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">电脑</a>
+                            <span>/</span>
+                            <a href="#">办公</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">家居</a>
+                            <span>/</span>
+                            <a href="#">家具</a>
+                            <span>/</span>
+                            <a href="#">家装</a>
+                            <span>/</span>
+                            <a href="#">厨具</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">男装</a>
+                            <span>/</span>
+                            <a href="#">女装</a>
+                            <span>/</span>
+                            <a href="#">童装</a>
+                            <span>/</span>
+                            <a href="#">内衣</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">美妆</a>
+                            <span>/</span>
+                            <a href="#">个护清洁</a>
+                            <span>/</span>
+                            <a href="#">宠物</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">女鞋</a>
+                            <span>/</span>
+                            <a href="#">箱包</a>
+                            <span>/</span>
+                            <a href="#">钟表</a>
+                            <span>/</span>
+                            <a href="#">珠宝</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">男鞋</a>
+                            <span>/</span>
+                            <a href="#">运动</a>
+                            <span>/</span>
+                            <a href="#">户外</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">房产</a>
+                            <span>/</span>
+                            <a href="#">汽车</a>
+                            <span>/</span>
+                            <a href="#">汽车用品</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">母婴</a>
+                            <span>/</span>
+                            <a href="#">玩具乐器</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">食品</a>
+                            <span>/</span>
+                            <a href="#">酒类</a>
+                            <span>/</span>
+                            <a href="#">生鲜</a>
+                            <span>/</span>
+                            <a href="#">特产</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">艺术</a>
+                            <span>/</span>
+                            <a href="#">礼品鲜花</a>
+                            <span>/</span>
+                            <a href="#">农资绿植</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">医药保健</a>
+                            <span>/</span>
+                            <a href="#">计生情趣</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">图书</a>
+                            <span>/</span>
+                            <a href="#">文娱</a>
+                            <span>/</span>
+                            <a href="#">电子书</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">机票</a>
+                            <span>/</span>
+                            <a href="#">酒店</a>
+                            <span>/</span>
+                            <a href="#">旅游</a>
+                            <span>/</span>
+                            <a href="#">生活</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">理财</a>
+                            <span>/</span>
+                            <a href="#">众筹</a>
+                            <span>/</span>
+                            <a href="#">白条</a>
+                            <span>/</span>
+                            <a href="#">保险</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">安装</a>
+                            <span>/</span>
+                            <a href="#">维修</a>
+                            <span>/</span>
+                            <a href="#">清洗</a>
+                            <span>/</span>
+                            <a href="#">二手</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">工业品</a>
+                            <div class="item">
+                                <div class="tab">
+                                    <ul>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周采购<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>装机大师<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                        <li>本周热卖<i class="fa fa-angle-right fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title"><span>本周热卖</span><i class="fa fa-angle-right fa-lg"></i></div>
+                                    <div class="subtitle">
+                                        <ul>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                            <li>女装</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <div class="bannerDiv">
+                        <div><img src="img/a.jpg" alt=""></div>
+                        <div><img src="img/b.jpg" alt=""></div>
+                        <div><img src="img/c.jpg" alt=""></div>
+                        <div><img src="img/d.jpg" alt=""></div>
+                        <div><img src="img/e.jpg" alt=""></div>
+                        <div><img src="img/f.jpg" alt=""></div>
+                        <div><img src="img/g.jpg" alt=""></div>
+                        <div><img src="img/h.jpg" alt=""></div>
+                    </div>
+                    <div class="lbtn"><i class="fa fa-angle-left"></i></div>
+                    <div class="rbtn"><i class="fa fa-angle-right"></i></div>
+                    <ul class="bannerUl">
+                        <li class="bannerActive"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <div class="columnImg">
+                        <img src="img/i.jpg" alt="">
+                        <img src="img/j.jpg" alt="">
+                        <img src="img/k.jpg" alt="">
+                    </div>
+                    <div class="btnBox">
+                        <div class="col-l-btn"><i class="fa fa-angle-left"></i></div>
+                        <div class="col-r-btn"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="sider">
+                    <div class="siderTop">
+                        <div class="list1">
+                            <div class="siderLogo"><img src="img/logo2.png" alt=""></div>
+                            <div class="siderText">
+                                <a href="#">
+                                    <span>Hi~欢迎逛京东！</span>
+                                </a>
+                                <div>
+                                    <a href="#"><span>登陆</span></a>
+                                    <i>|</i>
+                                    <a href="#"><span>注册</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list2">
+                            <div class="siderBtnL">新人福利</div>
+                            <div class="siderBtnR">PLUS会员</div>
+                        </div>
+                    </div>
+                    <div class="siderMiddle">
+                        <div class="siderTitle">
+                            <div class="TitleL">
+                                京东快报
+                            </div>
+                            <div class="TitleR"><a href="#">更多</a><i class="fa fa-angle-right"></i></div>
+                        </div>
+                        <div class="siderMain">
+                            <ul>
+                                <li><a href="#"><span>HOT</span>华为P40来袭：P30无奈让路，价格感人！</a></li>
+                                <li><a href="#"><span>热门</span>“5号电池一出”，充电宝没用了，所有手机通用，行千里不关机</a></li>
+                                <li><a href="#"><span>HOT</span>新iPhone定价彻底确定！XR2比上代还便宜！</a></li>
+                                <li><a href="#"><span>HOT</span>苹果9月将推新版XR，升级处理器等配置，价格扎心了</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="siderBottom">
+                        <div>
+                            <ul>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>话费</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>游戏</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>众筹</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>电影票</span></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>机票</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>加油卡</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>理财</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>企业购物</span></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>酒店</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>火车票</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>白条</span></a></li>
+                                <li><a href="#"><img src="img/手机.png" alt=""><span>礼品卡</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabBox">
+                        <a href="#" class="tabHeader">
+                            <ul>
+                                <li class="tabActive"><span>话费</span></li>
+                                <li><span>机票</span></li>
+                                <li><span>酒店</span></li>
+                            </ul>
+                        </a>
+                        <div class="tabMain">
+                            <div class="hf">
+                                <ul>
+                                    <li class="tabMainActive">话费充值</li>
+                                    <li>流量充值</li>
+                                    <li>套餐变更</li>
+                                </ul>
+                                <div class="hm"><span>号码</span><input type="text" value="移动/联通/电信"></div>
+                                <div class="mz">
+                                    <span>面值</span>
+                                    <select>
+                                        <option value='10'>100元</option>
+                                        <option value='10'>10</option>
+                                        <option value='10'>10</option>
+                                        <option value='10'>10</option>
+                                    </select>
+                                </div>
+                                <div class="hf_price tabMainActive">￥98.0-￥100.0</div>
+                                <div class="hf_btn">快速充值</div>
+                                <div class="hf_desc">抢90减40话费惠券</div>
+                            </div>
+                            <div class="jp">
+                                <ul>
+                                    <li class="tabMainActive">国内机票</li>
+                                    <li>流量充值</li>
+                                    <li>套餐变更</li>
+                                </ul>
+                                <div class="hm"><span>号码</span><input type="text" value="移动/联通/电信"></div>
+                                <div class="mz">
+                                    <span>面值</span>
+                                    <select>
+                                        <option value='10'>100元</option>
+                                        <option value='10'>10</option>
+                                        <option value='10'>10</option>
+                                        <option value='10'>10</option>
+                                    </select>
+                                </div>
+                                <div class="hf_price tabMainActive">￥98.0-￥100.0</div>
+                                <div class="hf_btn">快速充值</div>
+                                <div class="hf_desc">抢90减40话费惠券</div>
+                            </div>
+                            <div class="jd">
+                                <ul>
+                                    <li class="tabMainActive">酒店预订</li>
+                                    <li>流量充值</li>
+                                    <li>套餐变更</li>
+                                </ul>
+                                <div class="hm"><span>号码</span><input type="text" value="移动/联通/电信"></div>
+                                <div class="mz">
+                                    <span>面值</span>
+                                    <select>
+                                        <option value='10'>100元</option>
+                                        <option value='10'>10</option>
+                                        <option value='10'>10</option>
+                                        <option value='10'>10</option>
+                                    </select>
+                                </div>
+                                <div class="hf_price tabMainActive">￥98.0-￥100.0</div>
+                                <div class="hf_btn">快速充值</div>
+                                <div class="hf_desc">抢90减40话费惠券</div>
+                            </div>
+                        </div>
+                        <div class="tabDel">x</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 京东秒杀 -->
+    <div class="twoWrap">
+        <div class="center">
+            <div class="twoFull"></div>
+            <div class="twoSiderL">
+                <h1>京东秒杀</h1>
+                <i class="fa fa-bolt"></i>
+                <div class="twoText">
+                    <strong>16:00</strong>点场 倒计时
+                </div>
+                <div class="twoTimer">
+                    <div class="xiaoshi">00</div>
+                    <span>:</span>
+                    <div class="fenzhong">00</div>
+                    <span>:</span>
+                    <div class="miao">00</div>
+                </div>
+            </div>
+            <div class="twoSiderM">
+                <div class="ulBox">
+                    <ul>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title"> 1Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="img/piu.jpg" alt="">
+                            <div class="title">2【三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/piu.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/piu.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/piu.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">3【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diaonaon.jpg" alt="">
+                            <div class="title">【官方翻新】三星 Galaxy S10（SM-G9730）3D超声波屏下指纹骁龙855全网通4G手机 皓玉白 128G</div>
+                            <div class="price">
+                                <div class="priceL"><span>￥</span>139.00</div>
+                                <div class="priceR">￥899.00</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="twoBtnL"><i class="fa fa-angle-left"></i></div>
+                <div class="twoBtnR"><i class="fa fa-angle-right"></i></div>
+            </div>
+            <div class="twoSiderR">
+                <div class="twoBoxList">
+                    <div class="twoBox1">
+                        <img src="img/fan.png" alt="">
+                        <div class="twolist">
+                            <p class="title1">生活电器嗨购专场</p>
+                            <p class="title2">风扇低至19.9元</p>
+                            <div class="twoBtn">品类秒杀<i class="fa fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="twoBox2">
+                        <img src="img/hei.jpg" alt="">
+                        <div class="twolist">
+                            <p class="title1">生活电器嗨购专场</p>
+                            <p class="title2">风扇低至19.9元</p>
+                            <div class="twoBtn">品类秒杀<i class="fa fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="twoDolit">
+                    <li id="twoSiderRActive"></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 排行榜 -->
+    <div class="threeWrap">
+        <div class="center">
+            <div class="threeFull"></div>
+            <div class="threeWrapL">
+                <div class="threeLHeader">
+                    <div class="threeLHL"><strong>排行榜</strong><i class="fa fa-angle-right"></i></div>
+                    <div class="threeLHR">
+                        <ul>
+                            <li><a href="#">面部护舒</a></li>
+                            <li><a href="#">粮油调味</a></li>
+                            <li><a href="#">饮料冲调</a></li>
+                            <li><a href="#">厨房小电</a></li>
+                            <li><a href="#">影音娱乐</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="threeLMain">
+                    <div class="threeBox1">
+                        <div class="threeList1">
+                            <div class="listBox">
+                                <div class="threeLogo">
+                                    <strong>热卖</strong>
+                                    <span>TOP</span>
+                                    <span>01</span>
+                                </div>
+                                <img src="img/mian.jpg" alt="">
+                                <span>1陈克明面条 北方劲道挂面 易煮不糊汤 拉面炸酱面汤面挂面素面 细/圆面随机发 800g</span>
+                            </div>
+                            <div class="threediv1">
+                                <ul>
+                                    <li>好物榜<i class="fa fa-angle-right"></i></li>
+                                    <li>店铺榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                            <div class="threediv2">
+                                <ul>
+                                    <li>折扣榜<i class="fa fa-angle-right"></i></li>
+                                    <li>热搜榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="threeList2">
+                            <ul>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>02</span></div>
+                                    <div class="threeB"><img src="img/c11.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>03</span></div>
+                                    <div class="threeB"><img src="img/c11.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>04</span></div>
+                                    <div class="threeB"><img src="img/c11.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="threeBox2">
+                        <div class="threeList1">
+                            <div class="listBox">
+                                <div class="threeLogo">
+                                    <strong>热卖</strong>
+                                    <span>TOP</span>
+                                    <span>01</span>
+                                </div>
+                                <img src="img/c2.jpg" alt="">
+                                <span>2陈克明面条 北方劲道挂面 易煮不糊汤 拉面炸酱面汤面挂面素面 细/圆面随机发 800g</span>
+                            </div>
+                            <div class="threediv1">
+                                <ul>
+                                    <li>好物榜<i class="fa fa-angle-right"></i></li>
+                                    <li>店铺榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                            <div class="threediv2">
+                                <ul>
+                                    <li>折扣榜<i class="fa fa-angle-right"></i></li>
+                                    <li>热搜榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="threeList2">
+                            <ul>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>02</span></div>
+                                    <div class="threeB"><img src="img/c22.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>03</span></div>
+                                    <div class="threeB"><img src="img/c22.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>04</span></div>
+                                    <div class="threeB"><img src="img/c22.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="threeBox3">
+                        <div class="threeList1">
+                            <div class="listBox">
+                                <div class="threeLogo">
+                                    <strong>热卖</strong>
+                                    <span>TOP</span>
+                                    <span>01</span>
+                                </div>
+                                <img src="img/c3.jpg" alt="">
+                                <span>3陈克明面条 北方劲道挂面 易煮不糊汤 拉面炸酱面汤面挂面素面 细/圆面随机发 800g</span>
+                            </div>
+                            <div class="threediv1">
+                                <ul>
+                                    <li>好物榜<i class="fa fa-angle-right"></i></li>
+                                    <li>店铺榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                            <div class="threediv2">
+                                <ul>
+                                    <li>折扣榜<i class="fa fa-angle-right"></i></li>
+                                    <li>热搜榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="threeList2">
+                            <ul>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>02</span></div>
+                                    <div class="threeB"><img src="img/c33.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>03</span></div>
+                                    <div class="threeB"><img src="img/c33.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>04</span></div>
+                                    <div class="threeB"><img src="img/c33.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="threeBox4">
+                        <div class="threeList1">
+                            <div class="listBox">
+                                <div class="threeLogo">
+                                    <strong>热卖</strong>
+                                    <span>TOP</span>
+                                    <span>01</span>
+                                </div>
+                                <img src="img/c4.jpg" alt="">
+                                <span>4陈克明面条 北方劲道挂面 易煮不糊汤 拉面炸酱面汤面挂面素面 细/圆面随机发 800g</span>
+                            </div>
+                            <div class="threediv1">
+                                <ul>
+                                    <li>好物榜<i class="fa fa-angle-right"></i></li>
+                                    <li>店铺榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                            <div class="threediv2">
+                                <ul>
+                                    <li>折扣榜<i class="fa fa-angle-right"></i></li>
+                                    <li>热搜榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="threeList2">
+                            <ul>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>02</span></div>
+                                    <div class="threeB"><img src="img/c44.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>03</span></div>
+                                    <div class="threeB"><img src="img/c44.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>04</span></div>
+                                    <div class="threeB"><img src="img/c44.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="threeBox5">
+                        <div class="threeList1">
+                            <div class="listBox">
+                                <div class="threeLogo">
+                                    <strong>热卖</strong>
+                                    <span>TOP</span>
+                                    <span>01</span>
+                                </div>
+                                <img src="img/c1.jpg" alt="">
+                                <span>5陈克明面条 北方劲道挂面 易煮不糊汤 拉面炸酱面汤面挂面素面 细/圆面随机发 800g</span>
+                            </div>
+                            <div class="threediv1">
+                                <ul>
+                                    <li>好物榜<i class="fa fa-angle-right"></i></li>
+                                    <li>店铺榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                            <div class="threediv2">
+                                <ul>
+                                    <li>折扣榜<i class="fa fa-angle-right"></i></li>
+                                    <li>热搜榜<i class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="threeList2">
+                            <ul>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>02</span></div>
+                                    <div class="threeB"><img src="img/c55.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>03</span></div>
+                                    <div class="threeB"><img src="img/c55.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="threeA"><span>TOP</span><span>04</span></div>
+                                    <div class="threeB"><img src="img/c55.jpg" alt=""></div>
+                                    <div class="threeC">
+                                        李锦记 蚝油 财神蚝油 上等调料提鲜 510g
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="threeWrapR">
+                <div class="threeRHeader"><strong>品牌闪购</strong><i class="fa fa-angle-right"></i></div>
+                <div class="threeRList1">
+                    <div class="listBoxL">
+                        <img src="img/huawei.png" alt="">
+                        <h6>华为闪购狂欢</h6>
+                        <p class="threeRTitle1">
+                            全场最高直降411元
+                            <span>|</span>
+                            <span>仅剩</span>
+                            <span class="autoTimer">00:00:00</span>
+                        </p>
+                        <img src="img/huawei.jpg" alt="">
+                    </div>
+                </div>
+                <div class="threeRList2">
+                    <ul>
+                        <li><img src="img/mi.png" alt=""><span>小米品牌专场</span></li>
+                        <li><img src="img/mi.png" alt=""><span>小米品牌专场</span></li>
+                        <li><img src="img/mi.png" alt=""><span>小米品牌专场</span></li>
+                        <li><img src="img/mi.png" alt=""><span>小米品牌专场</span></li>
+                        <li><img src="img/mi.png" alt=""><span>小米品牌专场</span></li>
+                        <li><img src="img/mi.png" alt=""><span>小米品牌专场</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 发现好货 -->
+    <div class="fourWrap">
+        <div class="center">
+            <div class="fourFull"></div>
+            <div class="fourSider">
+                <div class="fourTitle"><span>探索新生活</span><i class="fa fa-angle-right"></i></div>
+            </div>
+            <div class="fourBanner">
+                <div class="fourList">
+                    <ul>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                        <li><span>Dickies 羊皮 拖鞋</span><img src="img/tupian2.jpg" alt=""></li>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                        <li><span>Dickies 羊皮 拖鞋</span><img src="img/tupian2.jpg" alt=""></li>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                        <li><span>Dickies 羊皮 拖鞋</span><img src="img/tupian2.jpg" alt=""></li>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                        <li><span>Dickies 羊皮 拖鞋</span><img src="img/tupian2.jpg" alt=""></li>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                        <li><span>Dickies 羊皮 拖鞋</span><img src="img/tupian2.jpg" alt=""></li>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                        <li><span>Dickies 羊皮 拖鞋</span><img src="img/tupian2.jpg" alt=""></li>
+                        <li><img src="img/tupian1.jpg" alt=""><span>sunlife木筷子</span></li>
+                    </ul>
+                </div>
+                <div class="bannerLine"><span></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 领券中心 -->
+    <div class="fiveWrap">
+        <div class="fiveFull"></div>
+        <div class="center">
+            <div class="coupon">
+                <div class="fiveHeader"><strong>领券中心</strong><i class="fa fa-angle-right"></i></div>
+                <div class="fiveMain">
+                    <ul>
+                        <li>
+                            <div class="fiveImg"><img src="img/quan.jpg" alt=""></div>
+                            <div class="fivePrice">
+                                <div class="RMB"><i>￥</i><span>50</span></div>
+                                <div class="limit">满99元可用</div>
+                                <div class="desc">仅可购买个护家清部分商品</div>
+                            </div>
+                            <div class="more">更多好券<i class="fa fa-angle-right"></i></div>
+                        </li>
+                        <li>
+                            <div class="fiveImg"><img src="img/quan.jpg" alt=""></div>
+                            <div class="fivePrice">
+                                <div class="RMB"><i>￥</i><span>50</span></div>
+                                <div class="limit">满99元可用</div>
+                                <div class="desc">仅可购买个护家清部分商品</div>
+                            </div>
+                            <div class="more">更多好券<i class="fa fa-angle-right"></i></div>
+                        </li>
+                        <li>
+                            <div class="fiveImg"><img src="img/quan.jpg" alt=""></div>
+                            <div class="fivePrice">
+                                <div class="RMB"><i>￥</i><span>50</span></div>
+                                <div class="limit">满99元可用</div>
+                                <div class="desc">仅可购买个护家清部分商品</div>
+                            </div>
+                            <div class="more">更多好券<i class="fa fa-angle-right"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopStore">
+                <div class="fiveHeader"><strong>逛好店</strong><i class="fa fa-angle-right"></i></div>
+                <div class="fiveMain">
+                    <ul>
+                        <li>
+                            <div class="fiveList1">
+                                <div class="storeName">珀莱雅京东自营官方旗舰店</div>
+                                <div class="spanBox"><span>自营</span><span>极速狂飙</span></div>
+                                <div class="attention">11.0万人关注</div>
+                            </div>
+                            <div class="fiveList2"><img src="img/attention.jpg" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="fiveList1">
+                                <div class="storeName">KOOLIFE车品京东自营旗舰店</div>
+                                <div class="spanBox"><span>自营</span><span>极速狂飙</span></div>
+                                <div class="attention">11.0万人关注</div>
+                            </div>
+                            <div class="fiveList2"><img src="img/attention.jpg" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="find">
+                <div class="fiveHeader"><strong>发现</strong><i class="fa fa-angle-right"></i></div>
+                <div class="fiveMain">
+                    <div class="fiveBox">
+                        <div class="fiveBox1">
+                            <div class="findImgBox">
+                                <div class="findA"><img src="img/shubiao.jpg" alt=""></div>
+                                <div class="findBC">
+                                    <div class="findB"><img src="img/shubiao2.jpg" alt=""></div>
+                                    <div class="findC"><img src="img/shubiao3.jpg" alt=""></div>
+                                </div>
+                                <div class="single"></div>
+                            </div>
+                            <div class="findDesc">一叶子紧致安瓶面膜礼盒</div>
+                            <div class="expersion">
+                                <div class="exImg"><img src="img/little.jpg" alt=""></div><span>实用美容小知识</span>
+                            </div>
+                        </div>
+                        <div class="fiveBox2">
+                            <div class="findImgBox">
+                                <div class="findA"><img src="img/shubiao.jpg" alt=""></div>
+                                <div class="findBC">
+                                    <div class="findB"><img src="img/shubiao2.jpg" alt=""></div>
+                                    <div class="findC"><img src="img/shubiao3.jpg" alt=""></div>
+                                </div>
+                                <div class="single"></div>
+                            </div>
+                            <div class="findDesc">二叶子紧致安瓶面膜礼盒</div>
+                            <div class="expersion">
+                                <div class="exImg"><img src="img/little.jpg" alt=""></div><span>实用美容小知识</span>
+                            </div>
+                        </div>
+                        <div class="fiveBox3">
+                            <div class="findImgBox">
+                                <div class="findA"><img src="img/shubiao.jpg" alt=""></div>
+                                <div class="findBC">
+                                    <div class="findB"><img src="img/shubiao2.jpg" alt=""></div>
+                                    <div class="findC"><img src="img/shubiao3.jpg" alt=""></div>
+                                </div>
+                                <div class="single"></div>
+                            </div>
+                            <div class="findDesc">三叶子紧致安瓶面膜礼盒</div>
+                            <div class="expersion">
+                                <div class="exImg"><img src="img/little.jpg" alt=""></div><span>实用美容小知识</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="findDolt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="findBtnL"><i class="fa fa-angle-left"></i></div>
+                <div class="findBtnR"><i class="fa fa-angle-right"></i></div>
+            </div>
+            <div class="newproduct">
+                <div class="fiveHeader"><strong>新品首发</strong><i class="fa fa-angle-right"></i></div>
+                <div class="fiveMain">
+                    <div class="newList1">
+                        <div class="newListL">
+                            <span>人气新品</span>
+                            <div class="newTitle">【5G手机】中兴天机 AXON 10</div>
+                            <span></span>
+                            <div class="newDesc">发现京东小魔方</div>
+                        </div>
+                        <div class="newListR"><img src="img/poto.jpg" alt=""></div>
+                    </div>
+                    <div class="newList2">
+                        <img src="img/imglist.jpg" alt="">
+                        <img src="img/imglist.jpg" alt="">
+                        <img src="img/imglist.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jingdong2.js"></script>
+</body>
+
+</html>
