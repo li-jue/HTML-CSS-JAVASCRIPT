@@ -11,6 +11,7 @@ ul li{
 }
 a{
     text-decoration: none;
+    color: #333;
 }
 .center{
     width: 1200px;
@@ -415,8 +416,9 @@ a{
     margin-top: 10px;
 }
 .menu>ul>li{
-    padding: 0px 15px 5px;
+    padding: 0px 13px 5px;
     transition: 0.3s;
+    font-size: 0;
 }
 .menu>ul>li:hover{
     background-color: #e9dfdf;
@@ -425,8 +427,7 @@ a{
     color: #c81623;
 }
 .menu .item .tab ul li:hover{
-    background-color: #c816
-    23;
+    background-color: #c81623;
 }
 .menu .item .content .title:hover span,.menu .item .content .title:hover i{
     color: #c81623;
@@ -438,12 +439,16 @@ a{
     font-size: 14px;
     color: black;
 }
-.menu span{
+.menu>ul>li>a:after{
+    content: '/';
+    color: #333;
+    margin: 0 3px;
     font-size: 12px;
-    color: black;
-    margin: 0px -3px;
 }
-
+.menu>ul>li>a:nth-last-child(2):after{
+    content: '';
+    margin: 0;
+}
 /* item */
 .menu .item{
     width: 1010px;
@@ -910,7 +915,6 @@ a{
 /* .twoWrap */
 .twoWrap{
     height: 291px;
-    cursor: pointer;
 }
 .twoFull{
     height: 30px;
@@ -923,6 +927,7 @@ a{
     text-align: center;
     padding: 0px 28px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .twoSiderL h1{
     color: white;
@@ -967,6 +972,7 @@ a{
     float: left;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .ulBox{
     width: 3200px;
@@ -1090,6 +1096,7 @@ a{
     float: left;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .twoSiderR img{
     width: 120px;
@@ -1585,7 +1592,7 @@ a{
 }
 /* 领券中心 */
 .fiveWrap{
-    height: 500px;
+    height: 380px;
 }
 .fiveFull{
     height: 40px;
@@ -1958,4 +1965,169 @@ a{
 .newList2 img{
     width: 76px;
     height: 76px;
+}
+/* 脚部 */
+.footer{
+    width: 100%;
+}
+.footer a{
+    color: #666;
+    font-size: 12px;
+}
+.ftm-full{
+    margin: 20px 0 30px;
+}
+.ft-top{
+    height: 100px;
+    border-bottom: 1px solid #dedede;
+}
+.ft-top ul li{
+    width: 300px;
+    float: left;
+    height: 40px;
+    padding: 0 36px;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+.ft-top ul li span{
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(221, 8, 8);
+    font-size: 22px;
+    color: rgb(221, 8, 8);
+    line-height: 34px;
+    float: left;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+.ft-top ul li h4{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #444;
+    float: left;
+    margin-left: 8px;
+}
+.ft-middle{
+    width: 100%;
+    height: 184px;
+    border-bottom: 1px solid #dedede;
+}
+.ftm-divs{
+    float: left;
+    width: 198px;
+    line-height: 22px;
+}
+.ftm-divs h5{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+.ftm-divs ul li a{
+    font-size: 12px;
+    color: #666;
+}
+.ftm-right{
+    float: right;
+    width: 200px;
+    height: 150px;
+}
+.ftm-right h5{
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+}
+.ftm-right p{
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+}
+.ftm-right a{
+    font-size: 12px;
+    color: #666;
+    float: right;
+}
+.ftb-nav{
+    margin-top: 20px;
+}
+.ftb-nav ul{
+    font-size: 0;
+    width: 941px;
+    margin: 0 auto;
+}
+.ftb-nav ul span{
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 13px;
+}
+.ftb-p a::after,.ftb-nav>ul>a:after{
+    content: '|';
+    color: #ccc;
+    margin: 0 5px;
+}
+.ftb-p>p>a:last-child:after,.ftb-nav>ul>a:last-child:after{
+    content: '';
+    margin: 0px;
+}
+.ftb-p{
+    text-align: center;
+    font-size: 0;
+    margin-top: 5px;
+}
+.ftb-p a{
+    color: #999;
+}
+.ftb-p p{
+    margin: 2px 0;
+}
+.footer a:hover,.footer i:hover{
+    color: rgb(221, 8, 8);
+}
+/* 电梯导航 */
+.elevator{
+    position: fixed;
+    right: 84px;
+    top: 200px;
+    width: 60px;
+    height: 480px;
+    background-color: #fff;
+}
+.elevator ul li{
+    width: 60px;
+    height: 60px;
+    padding: 9px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    transition: background .2s ease;
+}
+.elevator ul li:hover{
+    background-color: #c81623;
+}
+.elevator ul li:hover a{
+    color: white;
+}
+.elevator ul li::after{
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+    left: 50%;
+    margin-left: -25px;
+    z-index: -1;
+}
+.elevator ul li a{
+    font-size: 16px;
+}
+.elevator i{
+    display: block;
+    padding-bottom: 5px;
+}
+.toTop{
+    color: red;
 }
